@@ -50,3 +50,9 @@ INSERT INTO employees (employee_name, age, email, department_id, salary, status)
 SELECT * FROM departments;  
 
 SELECT * FROM employees;    
+
+
+--Query 1: Retrieve all employees with a salary greater than 60000
+SELECT * FROM employees WHERE salary > 60000;
+
+
