@@ -56,3 +56,5 @@ SELECT * FROM employees;
 SELECT * FROM employees WHERE salary > 60000;
 
 
+--Query 2: Retrieve the names of employees using a limit of 2, starting from the 3rd employee.
+SELECT employee_name FROM employees LIMIT 2 OFFSET 2 * 1;
