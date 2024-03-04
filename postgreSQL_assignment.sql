@@ -85,4 +85,5 @@ SELECT employee_name, salary, status FROM employees ORDER BY salary DESC LIMIT 5
 
 
 --Query 7: Retrieve the department name and the average salary of employees in each department:
-
+SELECT department_name, AVG(salary) FROM employees
+   JOIN departments USING(department_id) GROUP BY department_name;
