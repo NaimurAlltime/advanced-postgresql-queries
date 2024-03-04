@@ -74,3 +74,15 @@ SELECT employee_name FROM employees
 --Query 5: Retrieve the names of all employees who belong to the department titled 'Engineering'.
 SELECT employee_name  FROM employees
    JOIN departments USING(department_id) WHERE department_name = 'Engineering';
+
+
+--Query 6: Update the status of the employee with the highest salary to 'Promoted'
+UPDATE employees SET status = 'Promoted'
+  WHERE employee_id = ( SELECT employee_id FROM employees ORDER BY salary DESC LIMIT 1);   
+
+--check the updated status
+SELECT employee_name, salary, status FROM employees ORDER BY salary DESC LIMIT 5;
+
+
+--Query 7: Retrieve the department name and the average salary of employees in each department:
+
