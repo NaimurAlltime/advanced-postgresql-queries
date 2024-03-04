@@ -69,3 +69,8 @@ SELECT employee_name FROM employees
    WHERE email LIKE '%example.com'
      OR email LIKE '%example.net'
      OR email LIKE '%google.com';
+
+
+--Query 5: Retrieve the names of all employees who belong to the department titled 'Engineering'.
+SELECT employee_name  FROM employees
+   JOIN departments USING(department_id) WHERE department_name = 'Engineering';
