@@ -18,8 +18,8 @@ The purpose of a database schema in PostgreSQL:
   foreign keys, unique constraints, and check constraints, which enforce data
   integrity rules within the database.
 
--Security and Access Control: Schemas enable you to control access to database
-objects by granting or revoking permissions at the schema level.
+- Security and Access Control: Schemas enable you to control access to database
+  objects by granting or revoking permissions at the schema level.
 
 - Namespacing: Schemas provide a namespace for database objects, allowing objects
   with the same name to coexist within the same database. This is particularly

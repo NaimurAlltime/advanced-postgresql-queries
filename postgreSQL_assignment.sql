@@ -47,9 +47,11 @@ INSERT INTO employees (employee_name, age, email, department_id, salary, status)
     ('Taylor', 31, 'taylor@yahoo.com', 3, 58000, NULL);
 
 
-SELECT * FROM departments;  
+DROP TABLE departments;
+DROP TABLE employees; 
 
-SELECT * FROM employees;    
+SELECT * FROM employees; 
+SELECT * FROM departments;      
 
 
 --Query 1: Retrieve all employees with a salary greater than 60000
@@ -57,7 +59,7 @@ SELECT * FROM employees WHERE salary > 60000;
 
 
 --Query 2: Retrieve the names of employees using a limit of 2, starting from the 3rd employee.
-SELECT employee_name FROM employees LIMIT 2 OFFSET 2 * 1;
+SELECT employee_name FROM employees ORDER BY employee_id LIMIT 2 OFFSET 2 * 1;
 
 
 --Query 3: Calculate and display the average age of all employees.
