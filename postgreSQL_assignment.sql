@@ -66,7 +66,7 @@ SELECT employee_name FROM employees ORDER BY employee_id LIMIT 2 OFFSET 2 * 1;
 SELECT ROUND(AVG(age),1) AS average_age FROM employees;
 
 
---Query 4: Retrieve the names of employees whose email addresses contain 'example.com', 'example.net', or 'google.com'.
+--Query 4: Retrieve the names of employees whose email address contain 'example.com', 'example.net', or 'google.com'.
 SELECT employee_name FROM employees
    WHERE email LIKE '%example.com'
      OR email LIKE '%example.net'
